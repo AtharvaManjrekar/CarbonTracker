@@ -8,6 +8,8 @@ import GlobalCarbonImpact from './GlobalCarbonImpact';
 import AccurateTrackingV3 from './AccurateTrackingV3';
 import AboutUs from './AboutUs';
 import ChatPage from './ChatPage';
+import UserProfile from './UserProfile';
+// import Dashboard from './Dashboard';
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
         <Route path="/aboutUs" element={<AboutUs/>}/>
         <Route path="/accurateTrackingV3" element={<AccurateTrackingV3/>}/>
         <Route path="/chat" element={<ChatPage />} />
+        <Route path='/user-profile' element={<UserProfile/>}/>
+        {/* <Route path='/user-dashboard' element={<Dashboard/>}/> */}
       </Routes>
     </BrowserRouter>
   );

@@ -21,14 +21,14 @@ const AuthenticationPage = () => {
     // Simulate the authentication process
     if (isLoginMode) {
         // Simulating login
-        if (email === "test@example.com" && password === "password") {
+        // if (email === "test@example.com" && password === "password") {
             setSuccessMessage("Login successful!");
             setTimeout(() => {
-                navigate('/AccurateTrackingV3'); // Redirect to home page after 2 seconds
+              navigate('/user-profile'); // Redirect to the UserDashboard page after 2 seconds
             }, 2000);
-        } else {
-            setError("Invalid email or password.");
-        }
+        // } else {
+            // setError("Invalid email or password.");
+        // }
     } else {
         // Simulating registration
         if (email && password) {
